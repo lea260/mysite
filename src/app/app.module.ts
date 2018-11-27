@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {SuiModule} from 'ng2-semantic-ui';
+import { ButtonsModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import {SuiModule} from 'ng2-semantic-ui';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SuiModule
+    ButtonsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
