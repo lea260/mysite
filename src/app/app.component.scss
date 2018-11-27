@@ -9,7 +9,7 @@
   }
   body {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: row;
     margin: 0;
     padding: 0;
@@ -28,12 +28,12 @@
     flex-direction: row;
   }
   .content > article {
-    flex: 4;
-    min-height: 60vh;
+    flex: 1 1 auto;
+    // min-height: 60vh;
   }
   header, footer {
     background: yellowgreen;
-    height: 20vh;
+    // min-height: 20vh;
   }
 	header, article, nav, footer {
     padding: 1em;
@@ -44,24 +44,36 @@
     }
     #nav {
         order: 1;
-        display: flex;
+				display: flex;
+				flex: 1 1 auto;
     }
     .col-2 {
       order: 2;
 			display: flex;
-    }
+			flex: 1 1 auto;
+			flex-flow: row wrap;
+		}
+		article {
+			display: flex;
+			flex: 1 1 auto;
+			flex-flow: column wrap;
+		}
     #header {
         order: 2;
-        display: flex;
+				display: flex;
+				flex: 1 1 auto;
     }
-    #article {
+    .content {
         order: 3;
-        display: flex;
-    }
-    #footer {
-        order:4;
-				display: flex;				
-    }
+				display: flex;
+				flex: 1 1 auto;
+		}
+		
+		#footer {
+			order: 4;
+			display: flex;
+			flex: 1 1 auto;
+		}
 	}
 	
 
