@@ -1,21 +1,49 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>hola Elias:</h2>
-<ul>
-  <!-- <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li> -->
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="col-1" id="nav" >Nav</nav>
+  <div class="col-2">
+  	<header id="header">Header</header>
+    <main class="content" id="article">
+      <article>          
+        <div class="ui three buttons">
+          <button class="ui active button">One</button>
+          <button class="ui button">Two</button>
+          <button class="ui button">Three</button>
+        </div>
+        <sui-accordion class="styled fluid">
+            <sui-accordion-panel [isOpen]="true">
+                <div title>
+                    <i class="dropdown icon"></i>
+                    First Panel
+                </div>
+                <div content>
+                    <p>Add classes to the <code>sui-accordion</code> element to apply styles.</p>
+                </div>
+            </sui-accordion-panel>
+            <sui-accordion-panel>
+                <div title>
+                    <i class="dropdown icon"></i>
+                    Second Panel
+                </div>
+                <div content>
+                    <p>Second panel content.</p>
+                </div>
+            </sui-accordion-panel>
+        </sui-accordion>
+      </article>
+    </main>
+  	<footer id="footer">Footer</footer>
+  </div>
+</body>
+</html>
 
-<router-outlet></router-outlet>
+
+<!-- <router-outlet></router-outlet> -->
